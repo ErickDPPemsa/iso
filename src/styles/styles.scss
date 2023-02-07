@@ -1,0 +1,86 @@
+// Base
+@import './base/settings';
+@import './base/variables';
+@import './base/helpers';
+
+// Componentes
+// @import './components/nameCompnent';
+@import './components/Nav.scss';
+@import './components/spinner.scss';
+// pages
+// @import './pages/namePage';
+@import './pages//logIn.scss';
+@import './pages/srssta.scss';
+
+.containerFull {
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+
+    .containerNav {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        background-color: $Primary-Dark;
+    }
+
+    .containerPage {
+        position: relative;
+        width: 100%;
+        height: calc(100vh - 100px);
+
+        .fullPage {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.centerFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: $Primary-Dark;
+    color: $background;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid $Primary-Dark;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+        transition-duration: .4s;
+        background-color: darken($color: $background, $amount: 10);
+        color: $Primary-Dark;
+        font-weight: 500;
+    }
+}
+
+.btn2 {
+    background-color: $background;
+    color: $Primary-Dark;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+
+    &:hover {
+        transition-duration: .4s;
+        background-color: darken($color: $background, $amount: 10);
+        font-weight: bold;
+    }
+}
+
+.none {
+    display: none;
+}
+
+.sinLinea {
+    text-decoration: none;
+}

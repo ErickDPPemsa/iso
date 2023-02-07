@@ -1,0 +1,27 @@
+@import './variables';
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+        background-color: $background;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px $Secondary-Light;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $Primary-Dark;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: $Primary;
+    }
+}
